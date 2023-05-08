@@ -16,7 +16,7 @@ export const Favorite = ({ restaurant }) => {
     useContext(FavoritesContext);
   // Can be a bottleneck when lists are large
   const isFavorite = favorites.find((r) => r.placeId === restaurant.placeId);
-  console.log(favorites.length);
+  //console.log(favorites.length);
   return (
     <FavoriteButton
       onPress={() =>
